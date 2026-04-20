@@ -73,26 +73,43 @@ body {
 }
 
 /* Medical Glow Button */
+/* Medical Glow Button (Enhanced Highlight) */
 .btn-med {
-    background: linear-gradient(45deg, #0a6b61, #14b8a6);
+    background: linear-gradient(45deg, #00f5d4, #00c9a7);
     border: none;
-    color: #ffffff;
+    color: #003333;
     padding: 10px 22px;
     border-radius: 30px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
     display: inline-block;
     transition: all 0.4s ease;
-    box-shadow: 0 0 10px rgba(20, 184, 166, 0.4);
-}
-.btn-med:hover {
-    background: linear-gradient(45deg, #14b8a6, #0a6b61);
-    color: #ffffff;
-    transform: translateY(-4px);
+    
+    /* Strong Glow */
     box-shadow:
-        0 0 15px rgba(20, 184, 166, 0.8),
-        0 0 30px rgba(20, 184, 166, 0.6),
-        0 0 45px rgba(20, 184, 166, 0.4);
+        0 0 10px rgba(0, 255, 200, 0.6),
+        0 0 20px rgba(0, 255, 200, 0.5),
+        0 0 30px rgba(0, 255, 200, 0.4);
+
+    /* Makes it pop */
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Hover = Super Highlight */
+.btn-med:hover {
+    background: linear-gradient(45deg, #00c9a7, #00f5d4);
+    color: #002222;
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 200, 1),
+        0 0 40px rgba(0, 255, 200, 0.9),
+        0 0 60px rgba(0, 255, 200, 0.7);
+}
+
+/* Click effect */
+.btn-med:active {
+    transform: scale(0.95);
 }
 
 /* Glass Card Hover */
